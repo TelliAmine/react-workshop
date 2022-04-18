@@ -4,7 +4,7 @@ export default class Product extends Component {
   render() {
     return (
       <ProductFrame>
-        <ProductImage src={this.props.product.img}> </ProductImage>
+        <ProductImage src={this.props.product.img} />
         <ProductInfoWrapper>
           <span>{this.props.product.name}</span>
           <span>{this.props.product.price}</span>
@@ -25,8 +25,8 @@ const ProductFrame = styled.div`
 `;
 
 const ProductImage = styled.img`
-  width: 100%;
-  height: 100%;
+  width: 200px;
+  height: 200px;
   border-radius: 25px;
 `;
 const ProductInfoWrapper = styled.div`
